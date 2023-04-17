@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <title>HMI ATV340</title>
+  </head>
+  <body>
+    <div class="root">
+      <h1>HMI ATV340</h1>
+      <div class="app">
+        <div class="monitoredValues">
+          <div class="monitoredValue">
+            <div class="monitoredValue__name">Eta</div>
+            <div class="monitoredValue__value" id="eta">0</div>
+          </div>
+          <div class="monitoredValue">
+            <div class="monitoredValue__name">Frequency (Hz)</div>
+            <div class="monitoredValue__value" id="frequency">0</div>
+          </div>
+          <div class="monitoredValue">
+            <div class="monitoredValue__name">Current (A)</div>
+            <div class="monitoredValue__value" id="current">0</div>
+          </div>
+          <div class="monitoredValue" style="display: none">
+            <div class="monitoredValue__name">Voltage (V)</div>
+            <div class="monitoredValue__value" id="voltage">0</div>
+          </div>
+          <div class="monitoredValue">
+            <div class="monitoredValue__name">Velocity (rpm)</div>
+            <div class="monitoredValue__value" id="velocity">0</div>
+          </div>
+          <div class="monitoredValue">
+            <div class="monitoredValue__name">Power (W)</div>
+            <div class="monitoredValue__value" id="power">0</div>
+          </div>
+          <div class="monitoredValue">
+            <div class="monitoredValue__name">Torque</div>
+            <div class="monitoredValue__value" id="torque">0</div>
+          </div>
+        </div>
+
+        <div class="actions">
+          <div class="refFrequency">
+            <label for="refFrequency">Ref frequency :</label>
+            <input type="number" id="refFrequency" />
+          </div>
+          <div class="buttons">
+            <button id="start">Run</button>
+            <button id="stop">Stop</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/js/index.js"></script>
+  </body>
+</html>
